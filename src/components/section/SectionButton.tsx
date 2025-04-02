@@ -18,11 +18,14 @@ const SectionButton = () => {
       <Button variant='secondary' size='medium'>
         Secondary medium Button
       </Button>
-      <Button variant='secondary' size='large'>
-        Secondary Large Button
+      <Button size="small" variant='medium'>
+        Ghost Button
       </Button>
       <Button variant='primary' size='large'>
         Primary Large Button
+      </Button>
+      <Button variant='secondary' size='large'>
+        Secondary Large Button
       </Button>
     </div>
   )
