@@ -1,5 +1,5 @@
 {
-  "name": "sora-ui",
+  "name": "@sora-ui-material",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +8,12 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "build:button": "cd packages/components/atoms/button && npm run build",
+    "publish:button": "npm publish dist/components/button"
   },
   "dependencies": {
+    "@sora-ui-material/button": "^1.0.0",
     "@tailwindcss/vite": "^4.0.17",
     "clsx": "^2.1.1",
     "init": "^0.1.2",

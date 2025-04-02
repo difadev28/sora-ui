@@ -1,11 +1,11 @@
 {
-  "name": "@pot-shared-component/button",
-  "version": "1.0.6",
+  "name": "@sora-ui-material/button",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
-  "style": "./src/Button.module.scss",
+  "style": "./src/Button.module.css",
   "files": [
     "dist",
     "README.md"
@@ -16,17 +16,16 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js",
       "styles": "./dist/index.css"
-    },
-    "./css": "./style.css" 
+    }
   },
   "scripts": {
-    "prebuild": "mkdir -p ./src/assets  && npx tailwindcss -i ../../../../src/styles/index.scss -o ./src/assets/output.css",
+  "prebuild": "powershell -Command \"if (!(Test-Path ./src/assets)) { New-Item -ItemType Directory -Force -Path ./src/assets }\" && npx @tailwindcss/cli -i ../../../../src/styles/index.css -o ./src/assets/output.css",
     "build": "vite build"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.17"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.17"
   },
   "publishConfig": {
     "access": "public"

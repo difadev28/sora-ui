@@ -25,7 +25,7 @@ export default defineConfig({
     outDir: path.resolve(__dirname, '../../../../dist/components/button/dist'),
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: "@potloc-shared/button",
+      name: "@sora-ui-material/button",
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
