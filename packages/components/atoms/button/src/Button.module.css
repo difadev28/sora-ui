@@ -1,0 +1,39 @@
+
+
+.button {
+	@apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none  disabled:pointer-events-none disabled:opacity-50 leading-5 cursor-pointer;
+}
+.primary {
+	@apply px-8 py-2 rounded-full  text-sm hover:bg-custom-red/70 w-fit transition duration-200 bg-custom-red text-white border-none;
+}
+.secondary {
+	@apply border-2 border-custom-red px-8 py-2 rounded-full  text-sm w-fit transition duration-200 text-custom-red;
+}
+.ghost {
+	@apply px-8 py-2 rounded-full  text-sm w-fit transition duration-200 text-custom-primary border-none;
+	background:transparent;
+}
+.disabled {
+	@apply px-8 py-2 rounded-full  text-sm w-fit transition duration-200 bg-custom-disabled text-custom-text-disabled border-none;
+}
+.small {
+	@apply px-6 py-2 text-xs max-h-8;
+	&.rounded {
+		@apply rounded-[18px];
+	}
+}
+.medium {
+	@apply px-8 py-3 text-sm max-h-10;
+	&.rounded {
+		@apply rounded-full;
+	}
+}
+.large {
+	@apply px-9 py-4 text-base;
+	&.rounded {
+		@apply rounded-full;
+	}
+}
+.squared {
+	@apply rounded-md;
+}
