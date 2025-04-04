@@ -1,0 +1,7 @@
+.badge {
+	@apply w-fit rounded-full py-1 px-3 bg-custom-default text-center;
+
+	&__title {
+			@apply leading-7 text-custom-primary;
+	}
+}

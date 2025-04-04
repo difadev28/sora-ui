@@ -1,0 +1,33 @@
+{
+  "name": "@sora-ui-material/badge",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "style": "./src/Badge.module.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "styles": "./dist/index.css"
+    }
+  },
+  "scripts": {
+  "prebuild": "powershell -Command \"if (!(Test-Path ./src/assets)) { New-Item -ItemType Directory -Force -Path ./src/assets }\" && npx @tailwindcss/cli -i ../../../../src/styles/index.css -o ./src/assets/output.css",
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

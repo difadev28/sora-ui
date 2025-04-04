@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "test": "jest",
     "build:button": "cd packages/components/atoms/button && npm run build",
-    "publish:button": "npm publish dist/components/button"
+    "publish:button": "npm publish dist/components/button",
+    "build:badge": "cd packages/components/atoms/badge && npm run build",
+    "publish:badge": "npm publish dist/components/badge"
   },
   "dependencies": {
     "@sora-ui-material/button": "^1.0.0",
