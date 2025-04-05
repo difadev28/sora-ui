@@ -12,7 +12,9 @@
     "build:button": "cd packages/components/atoms/button && npm run build",
     "publish:button": "npm publish dist/components/button",
     "build:badge": "cd packages/components/atoms/badge && npm run build",
-    "publish:badge": "npm publish dist/components/badge"
+    "publish:badge": "npm publish dist/components/badge",
+    "build:spinner": "cd packages/components/atoms/spinner && npm run build",
+    "publish:spinner": "npm publish dist/components/spinner"
   },
   "dependencies": {
     "@sora-ui-material/button": "^1.0.0",
