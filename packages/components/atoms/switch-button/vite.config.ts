@@ -8,7 +8,7 @@ import fs from 'fs';
 // https://vite.dev/config/
 const copyPackageJson = () => {
   const src = path.resolve(__dirname, 'package.json'); // Resolve package.json path
-  const dest = path.resolve(__dirname, '../../../../dist/components/spinner/package.json'); // Resolve destination path
+  const dest = path.resolve(__dirname, '../../../../dist/components/switch-button/package.json'); // Resolve destination path
   fs.copyFileSync(src, dest);
 };
 export default defineConfig({
@@ -22,16 +22,17 @@ export default defineConfig({
     },
   ],
   build: {
-    outDir: path.resolve(__dirname, '../../../../dist/components/spinner/dist'),
+    outDir: path.resolve(__dirname, '../../../../dist/components/switch-button/dist'),
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: "@sora-ui-material/spinner",
+      name: "@sora-ui-material/switch-button",
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'tailwindcss', 'vite-plugin-dts', 'vite-plugin-css-injected-by-js'],
       output: {
+        manualChunks: undefined,
         globals: {
           react: 'React',
           'react/jsx-runtime': 'react/jsx-runtime',

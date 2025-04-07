@@ -1,0 +1,24 @@
+.switch {
+    @apply flex cursor-pointer select-none items-center;
+
+    &__container {
+        @apply relative;
+
+        &__toggle {
+            @apply block h-6 w-10 rounded-full border-2 border-custom-text-disabled px-1 bg-custom-disabled;
+
+            &--checked {
+                @apply bg-custom-primary;
+            }
+        }
+
+        &__circle {
+            @apply absolute left-1 top-1 flex h-4 w-4 items-center justify-center rounded-full;
+            @apply bg-custom-primary transition translate-x-0;
+
+            &--checked {
+                @apply bg-white transition translate-x-full;
+            }
+        }
+    }
+}
