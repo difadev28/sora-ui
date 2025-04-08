@@ -1,4 +1,4 @@
-import { Badge } from '../../../packages/components/atoms/badge/src'
+import { Badge } from '@sora-ui-material/badge'
 
 const SectionBadge = () => {
   return (

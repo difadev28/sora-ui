@@ -19,6 +19,7 @@
     "publish:switch-button": "npm publish dist/components/switch-button"
   },
   "dependencies": {
+    "@sora-ui-material/badge": "^1.0.1",
     "@sora-ui-material/button": "^1.0.1",
     "@sora-ui-material/spinner": "^1.0.0",
     "@tailwindcss/vite": "^4.0.17",
