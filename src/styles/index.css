@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import '../../packages/components/atoms/button/src/Button.module.css';
 @import '../../packages/components/atoms/badge/src/Badge.module.css';
+@import '../../packages/components/atoms/spinner/src/Spinner.module.css';
 @theme {
   --font-display: "Satoshi", "sans-serif";
   --breakpoint-3xl: 1920px;

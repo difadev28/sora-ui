@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import styles from './Spinner.module.scss'
 import { SpinnerType, SpinnerWrapperProps } from "./type";
 import SpinnerIcon from "./assets/SpinnerIcon";
 
@@ -18,7 +17,7 @@ export function SpinnerWrapper({
 function Spinner({ className, ...rest }: SpinnerType) {
 	return (
 		<SpinnerIcon
-			className={clsx(styles['spinner'], clsx(className))}
+			className={clsx('spinner', clsx(className))}
 			{...rest}
 		/>
 	);
