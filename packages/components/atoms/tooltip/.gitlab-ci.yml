@@ -1,0 +1,19 @@
+include:
+  - project: telkomsel.com/pipeline-template-assets/website-pipeline-template
+    ref: main
+    file: lib-stages.yml
+  - local: /.ci-compile.yml
+
+variables:
+  CI_PROJECT_NAME: "tooltip"
+  PROJECT_DIR: "packages/components/atoms/tooltip"
+
+compile:
+  before_script:
+    - cat ${NPMRC} > .npmrc
+  script:
+    - npm i --legacy-peer-deps && npm run build:tooltip
+
+publish-jfrog:
+  script:
+    - npm run publish:tooltip

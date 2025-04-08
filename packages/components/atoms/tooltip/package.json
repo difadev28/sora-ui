@@ -1,0 +1,32 @@
+{
+  "name": "@sora-ui-material/tooltip",
+  "version": "1.0.2",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "style": "./src/Tooltip.module.css",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "prebuild": "cp ../../../../tailwind.config.js . && npx tailwindcss -i ../../../../src/styles/index.scss -o ./src/assets/output.css ",
+    "build": "vite build"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.17"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,19 @@
+.tooltip {
+  @apply relative inline-block max-w-max w-[300px] ;
+}
+
+.tooltip_text {
+  @apply invisible absolute w-[225px] 2xl:w-[210px]  bg-custom-primary text-white text-center rounded-xl p-3 z-10 whitespace-normal;
+  @apply bottom-[125%] left-1/2 transform -translate-x-1/2;
+  @apply transition-[visibility,opacity] duration-200 ease-in-out opacity-0;
+}
+
+.tooltip_text::after {
+  @apply absolute top-full left-1/2 transform -translate-x-1/2;
+  @apply border-[5px] border-solid border-t-custom-primary border-x-transparent border-b-transparent;
+  content: "";
+}
+
+.tooltip:hover .tooltip_text {
+  @apply visible opacity-100;
+}
