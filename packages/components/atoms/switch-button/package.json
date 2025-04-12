@@ -1,6 +1,6 @@
 {
   "name": "@sora-ui-material/switch-button",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",

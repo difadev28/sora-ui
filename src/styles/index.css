@@ -3,6 +3,7 @@
 @import '../../packages/components/atoms/badge/src/Badge.module.css';
 @import '../../packages/components/atoms/spinner/src/Spinner.module.css';
 @import '../../packages/components/atoms/tooltip/src/Tooltip.module.css';
+@import '../../packages/components/atoms/switch-button/src/SwitchButton.module.css';
 @theme {
   --font-display: "Satoshi", "sans-serif";
   --breakpoint-3xl: 1920px;

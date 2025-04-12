@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import styles from './SwitchButton.module.scss'
 import clsx from 'clsx';
 
 type SwitchButtonProps = {
@@ -20,8 +19,8 @@ const SwitchButton = ({ onCheckedChange, checked }: SwitchButtonProps) => {
   }, [checked])
 
   return (
-    <label className={styles['switch']} htmlFor='switch' aria-label="Toggle switch">
-      <div className={styles['switch__container']}>
+    <label className={'switch'} htmlFor='switch' aria-label="Toggle switch">
+      <div className={'switch__container'}>
         <input
           id={"switch"}
           type='checkbox'
@@ -31,10 +30,10 @@ const SwitchButton = ({ onCheckedChange, checked }: SwitchButtonProps) => {
           className='sr-only'
         />
         <div
-          className={clsx(styles[`switch__container__toggle`], isChecked && styles[`switch__container__toggle--checked`])}
+          className={clsx(`switch__container__toggle`, isChecked && `switch__container__toggle--checked`)}
         ></div>
         <div
-          className={clsx(styles[`switch__container__circle`], isChecked && styles[`switch__container__circle--checked`])}
+          className={clsx(`switch__container__circle`, isChecked && `switch__container__circle--checked`)}
         ></div>
       </div>
     </label>

@@ -1,0 +1,23 @@
+.switch {
+    @apply flex cursor-pointer select-none items-center;
+}
+
+.switch__container {
+    @apply relative;
+}
+.switch__container__toggle {
+    @apply block h-6 w-10 rounded-full border-2 border-custom-text-disabled px-1 bg-custom-disabled;
+}
+
+.switch__container__toggle--checked {
+    @apply bg-custom-primary;
+}
+
+.switch__container__circle {
+    @apply absolute left-1 top-1 flex h-4 w-4 items-center justify-center rounded-full;
+    @apply bg-custom-primary transition translate-x-0;
+}
+
+.switch__container__circle--checked {
+    @apply bg-white transition translate-x-full;
+}
