@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
-  "types": "./dist/molecules/modal-base/src/index.d.ts",
+  "types": "./dist/index.d.ts",
   "style": "./src/ModalBase.module.scss",
   "files": [
     "dist",
@@ -12,7 +12,7 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/molecules/modal-base/src/index.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js"
     }

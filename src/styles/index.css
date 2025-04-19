@@ -4,6 +4,7 @@
 @import '../../packages/components/atoms/spinner/src/Spinner.module.css';
 @import '../../packages/components/atoms/tooltip/src/Tooltip.module.css';
 @import '../../packages/components/atoms/switch-button/src/SwitchButton.module.css';
+@import '../../packages/components/molecules/modal-base/src/ModalBase.module.css';
 @theme {
   --font-display: "Satoshi", "sans-serif";
   --breakpoint-3xl: 1920px;

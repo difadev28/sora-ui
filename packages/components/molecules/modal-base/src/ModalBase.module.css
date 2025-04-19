@@ -1,0 +1,31 @@
+.base-modal-container__sub {
+  @apply flex justify-center fixed inset-0 z-50 transition-all duration-300 transform mt-14 mb-14 h-fit;
+}
+
+.base-modal-container__sub--open {
+  @apply opacity-100 translate-y-0 scale-100;
+}
+
+.base-modal-container__sub--close {
+  @apply opacity-0 -translate-y-10 scale-95 pointer-events-none;
+}
+
+.base-modal-container__content {
+  @apply bg-white rounded-lg shadow-lg w-auto p-6 relative min-w-40 xl:max-h-[500px] 2xl:max-h-[950px];
+}
+
+.base-modal-container__content__close {
+  @apply absolute top-[20px] right-[12px] bg-white hover:outline-none hover:border-none outline-none border-none p-2 focus:outline-none focus:border-none cursor-pointer;
+}
+
+.base-overlay {
+  @apply fixed inset-0  transition-opacity duration-300 z-10;
+  background: rgba(0, 26, 65, .5)
+
+}
+.base-overlay--open {
+  @apply opacity-100;
+}
+.base-overlay--close {
+  @apply opacity-0 pointer-events-none;
+}
