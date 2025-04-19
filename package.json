@@ -17,12 +17,15 @@
     "build:spinner": "cd packages/components/atoms/spinner && npm run build",
     "publish:spinner": "npm publish dist/components/spinner",
     "build:switch-button": "cd packages/components/atoms/switch-button && npm run build",
-    "publish:switch-button": "npm publish dist/components/switch-button"
+    "publish:switch-button": "npm publish dist/components/switch-button",
+    "build:tooltip": "cd packages/components/atoms/tooltip && npm run build",
+    "publish:tooltip": "npm publish dist/components/tooltip"
   },
   "dependencies": {
     "@sora-ui-material/badge": "^1.0.1",
     "@sora-ui-material/button": "^1.0.1",
     "@sora-ui-material/spinner": "^1.0.0",
+    "@sora-ui-material/tooltip": "^1.0.2",
     "@tailwindcss/vite": "^4.0.17",
     "clsx": "^2.1.1",
     "init": "^0.1.2",
