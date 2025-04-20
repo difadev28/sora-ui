@@ -19,14 +19,21 @@
     "build:switch-button": "cd packages/components/atoms/switch-button && npm run build",
     "publish:switch-button": "npm publish dist/components/switch-button",
     "build:tooltip": "cd packages/components/atoms/tooltip && npm run build",
-    "publish:tooltip": "npm publish dist/components/tooltip"
+    "publish:tooltip": "npm publish dist/components/tooltip",
+    "build:modal-base": "cd packages/components/molecules/modal-base && npm run build",
+    "publish:modal-base": "npm publish dist/components/modal-base",
+    "build:page-wrapper": "cd packages/components/molecules/page-wrapper && npm run build",
+    "publish:page-wrapper": "npm publish dist/components/page-wrapper"
   },
   "dependencies": {
     "@sora-ui-material/badge": "^1.0.1",
     "@sora-ui-material/button": "^1.0.1",
+    "@sora-ui-material/modal-base": "^1.0.3",
     "@sora-ui-material/spinner": "^1.0.0",
     "@sora-ui-material/tooltip": "^1.0.2",
     "@tailwindcss/vite": "^4.0.17",
+    "cache": "^3.0.0",
+    "clean": "^4.0.2",
     "clsx": "^2.1.1",
     "init": "^0.1.2",
     "react": "^19.0.0",

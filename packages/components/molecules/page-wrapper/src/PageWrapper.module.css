@@ -1,0 +1,3 @@
+.container-page-wrapper {
+  @apply bg-custom-warm min-h-screen h-full;
+}
