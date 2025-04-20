@@ -18,20 +18,25 @@ export default defineConfig({
     dts({ insertTypesEntry: true }), // Generate .d.ts
     {
       name: 'copy-package-json',
-      closeBundle: copyPackageJson,
+      closeBundle: () => {
+        setTimeout(() => {
+          copyPackageJson()
+        }, 100)
+      },
     },
   ],
   build: {
     outDir: path.resolve(__dirname, '../../../../dist/components/modal-base/dist'),
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: "@sora-ui-material/modal-base",
+      name: "@pot-shared-component/modal-base",
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'tailwindcss', 'vite-plugin-dts', 'vite-plugin-css-injected-by-js'],
       output: {
+        manualChunks: undefined,
         globals: {
           react: 'React',
           'react/jsx-runtime': 'react/jsx-runtime',

@@ -1,5 +1,5 @@
 import { Button } from '@sora-ui-material/button'
-import { ModalBase } from '../../../packages/components/molecules/modal-base/src'
+import { ModalBase } from '@sora-ui-material/modal-base'
 import { useState } from 'react'
 
 const SectionModalBase = () => {

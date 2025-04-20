@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React, { useEffect } from "react";
 import CloseIcon from "./assets/CloseIcon";
-import { Button } from "../../../atoms/button/src/index";
+import { Button } from "@sora-ui-material/button";
 
 interface ModalBaseProps {
   children: React.ReactNode;
