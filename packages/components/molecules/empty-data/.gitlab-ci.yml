@@ -1,0 +1,19 @@
+include:
+  - project: telkomsel.com/pipeline-template-assets/website-pipeline-template
+    ref: main
+    file: lib-stages.yml
+  - local: /.ci-compile.yml
+
+variables:
+  CI_PROJECT_NAME: "page-wrapper"
+  PROJECT_DIR: "packages/components/molecules/page-wrapper"
+
+compile:
+  before_script:
+    - cat ${NPMRC} > .npmrc
+  script:
+    - npm i --legacy-peer-deps && npm run build:page-wrapper
+
+publish-jfrog:
+  script:
+    - npm run publish:page-wrapper

@@ -1,0 +1,7 @@
+.container {
+  @apply flex flex-col justify-center items-center gap-4;
+
+  &__label {
+      @apply text-sm text-custom-text-secondary-default text-center;
+  }
+}
