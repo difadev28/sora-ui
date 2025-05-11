@@ -1,0 +1,8 @@
+include:
+  - project: telkomsel/potloc/pipeline-template-assets/pipeline-template
+    ref: feature/shared-package
+    file: "shared-packages.yml"
+
+variables:
+  CI_PROJECT_NAME: "potloc-shared-component-dropdown"
+  PACKAGE_NAME: "component-dropdown"
