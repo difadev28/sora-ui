@@ -21,7 +21,7 @@ This repository implements a monorepo structure where each component is an indep
 - **Selective imports**: Install only the components you actually use
 - **Faster CI/CD**: Build and publish only changed components
 
-## 📁 Project Structure
+## 📁 Project Structure 
 
 ```
 sora-ui/
